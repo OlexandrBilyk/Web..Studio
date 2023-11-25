@@ -157,7 +157,7 @@ border-color: #FFF;
 .P_main_btn:hover{
     border-color: var(--project-blue);
     background-color: var(--project-blue);
-    color: var(--project-black);
+    color: #FFF;
 }
 .main_img{
     width: 370px;
