@@ -16,8 +16,7 @@ body{
     font-weight: 700;
     letter-spacing: 0.78px;
     text-decoration: none; 
-    margin-bottom: 20px;
-    margin-right: 93px;
+
    
 }
 .logo2{
@@ -27,6 +26,8 @@ body{
     font-weight: 700;
     letter-spacing: 0.78px;
     text-decoration: none;
+    margin-bottom: 20px;
+    margin-right: 93px;
 }
 .nav_list_link{
       
