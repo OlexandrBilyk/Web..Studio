@@ -9,6 +9,9 @@ body{
     font-style: normal;
     line-height: normal;
 }
+button{
+    cursor: pointer;
+}
 .logo{
     color: var(--project-blue);
     font-family: 'Raleway',sans-serif;
@@ -147,11 +150,18 @@ ul{
     font-weight: 400;
     letter-spacing: 0.48px;
 }
+.footer, .P_footer{
+    background-color: var(--project-black);
+}
+.footer_item{
+    color: #FFF;
+}
 .footer_mailto, .footer_tel{
-    color: var(--project-black);
+    color: var(--project-grey);
     font-weight: 500;
     letter-spacing: 0.28px;
     text-decoration: none;
+    
 }
 .footer_tel:hover{
     color: var(--project-blue);
@@ -159,7 +169,11 @@ ul{
 .footer_mailto:hover{
     color: var(--project-blue);
 }
+.P_footer_item{
+    color: #FFF;
+}
 .P_main_btn{
+    cursor: pointer;
     border-radius: 4px;
 background: #F5F4FA;
 /* width: 73px; */
