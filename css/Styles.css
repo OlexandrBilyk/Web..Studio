@@ -9,9 +9,11 @@ body{
     font-style: normal;
     line-height: normal;
 }
+
 button{
     cursor: pointer;
 }
+/* header */
 .logo{
     color: var(--project-blue);
     font-family: 'Raleway',sans-serif;
@@ -29,8 +31,6 @@ button{
     font-weight: 700;
     letter-spacing: 0.78px;
     text-decoration: none;
-    margin-bottom: 20px;
-    margin-right: 93px;
 }
 .nav_list_link{
       
@@ -39,7 +39,6 @@ button{
     line-height: normal;
     letter-spacing: 0.28px;
     text-decoration: none;
-    margin: 50px;
     
 }
 .nav_list_link:hover{
@@ -55,8 +54,6 @@ ul{
     font-weight: 500;
     letter-spacing: 0.28px;
     text-decoration: none;
-    margin-left: 342px;
-    margin-right: 50px;
 }
 .mailto_link:hover{
     color: var(--project-blue);
@@ -64,6 +61,7 @@ ul{
 .tel_link:hover{
     color: var(--project-blue);
 }
+/* main */
 .main_basket{
     background-color: var(--project-black);
 }
@@ -75,6 +73,7 @@ ul{
     line-height:1.36364; /* 136.364% */
     letter-spacing: 2.64px;
     text-transform: uppercase;
+    margin-top: 232px;
     /* background-color: var(--project-black); */
 
 }   
@@ -86,24 +85,32 @@ ul{
     line-height: 1.875; /* 187.5% */
     letter-spacing: 0.96px;
     padding: 10px 32px;
+    margin-bottom: 294px;
 
     border-radius: 4px;
     background: var(--project-blue);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);    
+}
+/* rules  */
+.rules{
+    outline: 3px dashed purple;
 }
 .rules_main_list_title{
     color: var(--project-black);
     font-weight: 700;
     letter-spacing: 0.42px;
     text-transform: uppercase;
-    margin: 30px;
+    margin: 0 0 10px;
 }
 .rules_main_list_item{
     color: var(--project-grey);
     font-weight: 400;
     line-height: 1.71429; /* 171.429% */
     letter-spacing: 0.42px;
-    margin: 30px;
+}
+/* about */
+.about{
+    outline: 2px solid blue;
 }
 .about_title{
     color: var(--project-black);
@@ -111,13 +118,17 @@ ul{
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
-    margin-bottom: 57px;
+    margin: 94px 0 50px ;
 }
 .about_list_img{
     width: 370px;
     height: 294px;
     flex-shrink: 0;
-    margin:30px;
+    /* margin-top: 50px; */
+}
+/* team */
+.team{
+    outline: 2px solid red;
 }
 .team_title{
     color: var(--project-black);
@@ -125,14 +136,13 @@ ul{
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
-    margin-top: 186px;
-    margin-bottom: 49px;
+    margin: 188px 0 50px;
 }
 .team_img{
     width: 270px;
     height: 260px;
     flex-shrink: 0;
-    margin: 30px;
+    margin-bottom: 30px;
 }
 .team_list_item{
     color: var(--project-black);
@@ -140,8 +150,7 @@ ul{
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.48px;
-    margin-top: 29px;
-    margin-bottom: 10px;
+    margin-bottom:10px;
 }
 .team_list_item2{
     color: var(--project-grey);
@@ -150,6 +159,7 @@ ul{
     font-weight: 400;
     letter-spacing: 0.48px;
 }
+/* footer */
 .footer, .P_footer{
     background-color: var(--project-black);
 }
@@ -169,6 +179,7 @@ ul{
 .footer_mailto:hover{
     color: var(--project-blue);
 }
+/* Portfolio */
 .P_footer_item{
     color: #FFF;
 }
@@ -188,18 +199,20 @@ line-height: 1.625; /* 162.5% */
 letter-spacing: 0.48px;
 border-color: #FFF;
 padding: 6px 22px;
-margin-bottom: 50px;
+
+}
+#P_btn{
+    margin-top: 126px;
 }
 .P_main_btn:hover{
     border-color: var(--project-blue);
     background-color: var(--project-blue);
     color: #FFF;
 }
-.main_img{
+.P_img{
     width: 370px;
 height: 294px;
 flex-shrink: 0;
-margin: 30px;
 }
 .P_main_title{
     color: var(--project-black);
@@ -207,7 +220,7 @@ margin: 30px;
     font-weight: 700;
     line-height: 2; /* 200% */
     letter-spacing: 1.08px;
-    margin-top: 19px;
+    margin-top: 20px;
 }
 .P_list_item{
     color: var(--project-grey);
@@ -216,9 +229,10 @@ margin: 30px;
     line-height: 1.875; /* 187.5% */
     letter-spacing: 0.48px ;
 }
-img, button{
+.P_img, button{
     display: block;
 }
+/* container */
 ul, p, h2, button{
     padding: 0;
     margin: 0;
@@ -229,6 +243,3 @@ ul, p, h2, button{
     margin: 0 auto;
  /* outline: 2px solid red;  */
 } 
-.rules{
-    margin-bottom:94px ;
-}
