@@ -14,6 +14,9 @@ button{
     cursor: pointer;
 }
 /* header */
+header{
+    /* outline: 2px solid burlywood; */
+}
 .logo{
     color: var(--project-blue);
     font-family: 'Raleway',sans-serif;
@@ -62,8 +65,12 @@ ul{
     color: var(--project-blue);
 }
 /* main */
+main{
+    /* outline: 2px solid red; */
+}
 .main_basket{
     background-color: var(--project-black);
+    padding: 200px 230px 280px;
 }
 .main_title{
     color: #FFF;
@@ -85,7 +92,8 @@ ul{
     line-height: 1.875; /* 187.5% */
     letter-spacing: 0.96px;
     padding: 10px 32px;
-    margin-bottom: 294px;
+    
+   
 
     border-radius: 4px;
     background: var(--project-blue);
@@ -93,8 +101,10 @@ ul{
 }
 /* rules  */
 .rules{
-    outline: 3px dashed purple;
+    /* outline: 3px dashed purple; */
+
 }
+
 .rules_main_list_title{
     color: var(--project-black);
     font-weight: 700;
@@ -119,6 +129,7 @@ ul{
     font-weight: 700;
     letter-spacing: 1.08px;
     margin: 94px 0 50px ;
+    padding-top: 94px;
 }
 .about_list_img{
     width: 370px;
@@ -128,7 +139,7 @@ ul{
 }
 /* team */
 .team{
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
 .team_title{
     color: var(--project-black);
@@ -151,6 +162,7 @@ ul{
     font-weight: 500;
     letter-spacing: 0.48px;
     margin-bottom:10px;
+    padding-bottom: 188px;
 }
 .team_list_item2{
     color: var(--project-grey);
@@ -238,7 +250,7 @@ ul, p, h2, button{
     margin: 0;
 }
 .container{
-    width: 1170px;
+    width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
  /* outline: 2px solid red;  */
