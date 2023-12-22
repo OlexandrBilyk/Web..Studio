@@ -16,7 +16,11 @@ button{
 /* header */
 header{
     /* outline: 2px solid burlywood; */
+    padding: 40px 0 0;
 
+}
+#header_logo_black{
+    color: var(--project-black);
 }
 .logo{
     color: var(--project-blue);
@@ -26,10 +30,10 @@ header{
     letter-spacing: 0.78px;
     text-decoration: none; 
 
+
    
 }
 .logo2{
-    color: #fff;
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-weight: 700;
@@ -59,7 +63,7 @@ ul{
 
 
 .mailto_link,.tel_link{
-    color: var(--project-black);
+    color: var(--project-grey);
     font-weight: 500;
     letter-spacing: 0.28px;
     text-decoration: none;
@@ -76,7 +80,7 @@ main{
 }
 .main_hero{
     background-color: var(--project-black);
-    padding: 300px 230px;
+    padding: 300px 0 0;
     
 }
 .main_title{
@@ -87,8 +91,7 @@ main{
     line-height:1.36364; /* 136.364% */
     letter-spacing: 2.64px;
     text-transform: uppercase;
-    /* margin-top: 232px; */
-    /* background-color: var(--project-black); eee*/
+  
 
 }   
 .main_btn{
@@ -100,7 +103,7 @@ main{
     line-height: 1.875; /* 187.5% */
     letter-spacing: 0.96px;
     padding: 10px 32px;
-    margin: 10px 475px;
+    margin: 0 auto;
     
    
 
@@ -111,7 +114,7 @@ main{
 /* rules  */
 .rules{
     /* outline: 3px dashed purple; */
-    padding: 294px 0 94px ;
+    padding: 94px 0 94px ;
 
 }
 .rules_main_list{
@@ -135,6 +138,7 @@ main{
 /* about */
 .about{
     /* outline: 2px solid blue; */
+    padding: 0 0 94px;
 }
 .about_nav_list{
     display: flex;
@@ -158,7 +162,8 @@ main{
 /* team */
 .team{
     /* outline: 2px solid red; */
-    padding: 188px 0 184px ;
+    padding: 94px 0 124px ;
+    background: #F5F4FA;
 }
 .team_list{
     display: flex;
@@ -170,7 +175,7 @@ main{
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
-    margin: 188px 0 50px;
+    margin:0 50px;
 }
 .team_img{
     width: 270px;
@@ -201,15 +206,23 @@ main{
 .footer, .P_footer{
     background-color: var(--project-black);
 }
-.footer_item{
+#footer_logo_white{
+    color: #fff;
+}
+.footer_link{
+    display: flex;
+    gap: 9px;
+    flex-direction: column;
+}
+.footer_address{
+    margin-top: 20px;
     color: #FFF;
 }
 .footer_mailto, .footer_tel{
     color: var(--project-grey);
     font-weight: 500;
     letter-spacing: 0.28px;
-    text-decoration: none;
-    
+    text-decoration: none; 
 }
 .footer_tel:hover{
     color: var(--project-blue);
@@ -219,7 +232,7 @@ main{
 }
 /* Portfolio */
 .P_footer{
-    padding: 125px;
+    padding: 126px 0 0 ;
 }
 .P_footer_item{
     color: #FFF;
@@ -227,6 +240,7 @@ main{
 .P_btn_link{
     display: flex;
     gap: 8px;
+    justify-content: center;
 }
 .P_main_btn{
     cursor: pointer;
@@ -244,7 +258,7 @@ line-height: 1.625; /* 162.5% */
 letter-spacing: 0.48px;
 border-color: #FFF;
 padding: 6px 22px;
-margin-top: 126px;
+margin: 126px 0 50px
 
 
 }
