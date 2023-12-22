@@ -16,6 +16,7 @@ button{
 /* header */
 header{
     /* outline: 2px solid burlywood; */
+
 }
 .logo{
     color: var(--project-blue);
@@ -28,13 +29,18 @@ header{
    
 }
 .logo2{
-    color: var(--project-black);
+    color: #fff;
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.78px;
     text-decoration: none;
 }
+.nav_list{
+    display: flex;
+    gap: 50px;
+}
+
 .nav_list_link{
       
     color: var(--project-black);
@@ -68,9 +74,10 @@ ul{
 main{
     /* outline: 2px solid red; */
 }
-.main_basket{
+.main_hero{
     background-color: var(--project-black);
-    padding: 200px 230px 280px;
+    padding: 300px 230px;
+    
 }
 .main_title{
     color: #FFF;
@@ -80,11 +87,12 @@ main{
     line-height:1.36364; /* 136.364% */
     letter-spacing: 2.64px;
     text-transform: uppercase;
-    margin-top: 232px;
+    /* margin-top: 232px; */
     /* background-color: var(--project-black); eee*/
 
 }   
 .main_btn{
+    
     color: #FFF;
     text-align: center;
     font-size: 16px;
@@ -92,6 +100,7 @@ main{
     line-height: 1.875; /* 187.5% */
     letter-spacing: 0.96px;
     padding: 10px 32px;
+    margin: 10px 475px;
     
    
 
@@ -102,7 +111,12 @@ main{
 /* rules  */
 .rules{
     /* outline: 3px dashed purple; */
+    padding: 294px 0 94px ;
 
+}
+.rules_main_list{
+    display: flex;
+    gap: 30px;
 }
 
 .rules_main_list_title{
@@ -120,7 +134,11 @@ main{
 }
 /* about */
 .about{
-    outline: 2px solid blue;
+    /* outline: 2px solid blue; */
+}
+.about_nav_list{
+    display: flex;
+    gap: 30px;
 }
 .about_title{
     color: var(--project-black);
@@ -128,8 +146,8 @@ main{
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
-    margin: 94px 0 50px ;
-    padding-top: 94px;
+    margin: 0 0 50px ;
+    /* padding-top: 94px; */
 }
 .about_list_img{
     width: 370px;
@@ -140,6 +158,11 @@ main{
 /* team */
 .team{
     /* outline: 2px solid red; */
+    padding: 188px 0 184px ;
+}
+.team_list{
+    display: flex;
+    gap: 30px;
 }
 .team_title{
     color: var(--project-black);
@@ -162,7 +185,6 @@ main{
     font-weight: 500;
     letter-spacing: 0.48px;
     margin-bottom:10px;
-    padding-bottom: 188px;
 }
 .team_list_item2{
     color: var(--project-grey);
@@ -172,6 +194,10 @@ main{
     letter-spacing: 0.48px;
 }
 /* footer */
+.footer{
+    /* outline: 2px solid red; */
+    padding: 126px 0 0 ;
+}
 .footer, .P_footer{
     background-color: var(--project-black);
 }
@@ -192,8 +218,15 @@ main{
     color: var(--project-blue);
 }
 /* Portfolio */
+.P_footer{
+    padding: 125px;
+}
 .P_footer_item{
     color: #FFF;
+}
+.P_btn_link{
+    display: flex;
+    gap: 8px;
 }
 .P_main_btn{
     cursor: pointer;
@@ -211,16 +244,20 @@ line-height: 1.625; /* 162.5% */
 letter-spacing: 0.48px;
 border-color: #FFF;
 padding: 6px 22px;
+margin-top: 126px;
+
 
 }
-#P_btn{
-    margin-top: 126px;
-}
+
 .P_main_btn:hover{
     border-color: var(--project-blue);
     background-color: var(--project-blue);
     color: #FFF;
 }
+.P_main_list_link{
+    padding-bottom: 174px;
+}
+
 .P_img{
     width: 370px;
 height: 294px;
