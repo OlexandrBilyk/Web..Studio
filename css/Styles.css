@@ -22,6 +22,11 @@ header{
 #header_logo_black{
     color: var(--project-black);
 }
+.navigation{
+    display: flex;
+    align-items: center;
+    gap: 93px;
+}
 .logo{
     color: var(--project-blue);
     font-family: 'Raleway',sans-serif;
@@ -43,7 +48,9 @@ header{
 .nav_list{
     display: flex;
     gap: 50px;
+  
 }
+
 
 .nav_list_link{
       
@@ -80,8 +87,7 @@ main{
 }
 .main_hero{
     background-color: var(--project-black);
-    padding: 300px 0 0;
-    
+    padding: 300px 0 0; 
 }
 .main_title{
     color: #FFF;
