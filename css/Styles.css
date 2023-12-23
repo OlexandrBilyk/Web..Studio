@@ -271,7 +271,15 @@ margin: 126px 0 50px
 .P_main_list_link{
     padding-bottom: 174px;
 }
-
+.P_list{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 30px;
+}
+.P_list_link{
+    width: 370px;
+}
 .P_img{
     width: 370px;
 height: 294px;
