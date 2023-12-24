@@ -17,7 +17,6 @@ button{
 header{
     /* outline: 2px solid burlywood; */
     padding: 40px 0 0;
-
 }
 #header_logo_black{
     color: var(--project-black);
@@ -25,7 +24,8 @@ header{
 .navigation{
     display: flex;
     align-items: center;
-    gap: 93px;
+    justify-content: space-between;
+    
 }
 .logo{
     color: var(--project-blue);
@@ -46,9 +46,8 @@ header{
     text-decoration: none;
 }
 .nav_list{
-    display: flex;
-    gap: 50px;
-  
+  display: flex;
+  gap: 50px;
 }
 
 
@@ -68,6 +67,11 @@ ul{
     list-style-type: none;
 }
 
+.nav_info{
+    display: flex;
+    gap: 50px;
+    justify-content:center;
+}
 
 .mailto_link,.tel_link{
     color: var(--project-grey);
@@ -82,9 +86,9 @@ ul{
     color: var(--project-blue);
 }
 /* main */
-main{
-    /* outline: 2px solid red; */
-}
+/* main{
+    outline: 2px solid red;
+} */
 .main_hero{
     background-color: var(--project-black);
     padding: 300px 0 0; 
