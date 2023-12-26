@@ -1,0 +1,224 @@
+:root{
+    --project-black:#2F303A;;
+    --project-grey:rgba(117, 117, 117, 1);
+    --project-blue:rgba(33, 150, 243, 1);
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+}
+
+button{
+    cursor: pointer;
+}
+/* header */
+header{
+    /* outline: 2px solid burlywood; */
+    padding: 24px 0 25px;
+}
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header_logo_black{
+    color: var(--project-black);
+}
+.header_pages{
+    display: flex;
+    gap: 93px;
+    
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo{
+    color: var(--project-blue);
+    font-family: 'Raleway',sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+    text-decoration: none; 
+
+
+   
+}
+.logo2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+    text-decoration: none;
+}
+.nav_list{
+  display: flex;
+  gap: 50px;
+}
+
+
+.nav_list_link{
+      
+    color: var(--project-black);
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    text-decoration: none;
+    
+}
+.nav_list_link:hover{
+    color: var(--project-blue);
+}
+ul{
+    list-style-type: none;
+}
+.contacts{
+    display: flex;
+    gap: 50px;
+    justify-content: flex-end;
+}
+
+.mailto_link,.tel_link{
+    color: var(--project-grey);
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    text-decoration: none;
+}
+.mailto_link:hover{
+    color: var(--project-blue);
+}
+.tel_link:hover{
+    color: var(--project-blue);
+}
+.P_header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.P_header{
+
+    border-bottom: 1px solid #ECECEC;
+}
+.P_descr{
+    padding-bottom: 114px;
+}
+.P_footer{
+    padding: 60px 0;
+}
+.P_footer_item{
+    color: #FFF;
+}
+.P_btn_link{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+.P_main_btn{
+    cursor: pointer;
+    border-radius: 4px;
+background: #F5F4FA;
+/* width: 73px; */
+flex-shrink: 0;
+box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+
+    color:#212121;
+    text-align: center;
+    /* font-size: 10px; */
+    font-weight: 500;
+    line-height: 1.625; /* 162.5% */
+    letter-spacing: 0.48px;
+    border-color: #FFF;
+    padding: 6px 22px;
+    margin: 126px 0 50px;
+    border: none;
+
+
+
+}
+
+.P_main_btn:hover{
+    border-color: var(--project-blue);
+    background-color: var(--project-blue);
+    color: #FFF;
+}
+.P_main_list_link{
+    padding-bottom: 174px;
+}
+.P_list{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 30px;
+}
+.P_list_link{
+    width: 370px;
+}
+.P_img{
+    width: 370px;
+height: 294px;
+flex-shrink: 0;
+}
+.P_main_title{
+    color: var(--project-black);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2; /* 200% */
+    letter-spacing: 1.08px;
+    margin-top: 20px;
+}
+.P_list_item{
+    color: var(--project-grey);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.875; /* 187.5% */
+    letter-spacing: 0.48px ;
+}
+.P_img, button{
+    display: block;
+}
+/* container */
+ul, p, h2, button{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+ /* outline: 2px solid red;  */
+} 
+.footer{
+    /* outline: 2px solid red; */
+    padding: 60px 0;
+}
+.footer, .P_footer{
+    background-color: var(--project-black);
+}
+#footer_logo_white{
+    color: #fff;
+}
+.footer_link{
+    display: flex;
+    gap: 9px;
+    flex-direction: column;
+}
+.footer_address{
+    margin-top: 20px;
+    color: #FFF;
+}
+.footer_mailto, .footer_tel{
+    color: var(--project-grey);
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    text-decoration: none; 
+}
+.footer_tel:hover{
+    color: var(--project-blue);
+}
+.footer_mailto:hover{
+    color: var(--project-blue);
+}
