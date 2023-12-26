@@ -241,6 +241,9 @@ ul{
     color: var(--project-blue);
 }
 /* Portfolio */
+.P_descr{
+    padding-bottom: 114px;
+}
 .P_footer{
     padding: 60px 0;
 }
