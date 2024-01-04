@@ -203,6 +203,12 @@ ul{
     display: flex;
     gap: 30px;
 }
+.team_list_link{
+    border-radius: 0px 0px 4px 4px;
+    background: #FFF;
+    width: 270px;
+    padding-bottom: 30px;
+}
 .team_title{
     color: var(--project-black);
     text-align: center;

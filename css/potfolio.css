@@ -116,6 +116,7 @@ ul{
     display: flex;
     gap: 8px;
     justify-content: center;
+    flex-basis: calc((100% - 40px) / 5);
 }
 .P_main_btn{
     cursor: pointer;
@@ -153,14 +154,19 @@ box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0
     flex-wrap: wrap;
     row-gap: 50px;
     column-gap: 30px;
+    flex-basis: calc((100% - 60px) / 3);
 }
 .P_list_link{
     width: 370px;
+    border: 1px solid #EEE;
+    background: #FFF;
+    padding: 0 0 20px;
 }
 .P_img{
     width: 370px;
 height: 294px;
 flex-shrink: 0;
+
 }
 .P_main_title{
     color: var(--project-black);
@@ -169,6 +175,7 @@ flex-shrink: 0;
     line-height: 2; /* 200% */
     letter-spacing: 1.08px;
     margin-top: 20px;
+    padding-left: 24px;
 }
 .P_list_item{
     color: var(--project-grey);
@@ -176,6 +183,7 @@ flex-shrink: 0;
     font-weight: 400;
     line-height: 1.875; /* 187.5% */
     letter-spacing: 0.48px ;
+    padding-left: 24px;
 }
 .P_img, button{
     display: block;
