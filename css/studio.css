@@ -161,14 +161,27 @@ ul{
     font-weight: 700;
     letter-spacing: 0.42px;
     text-transform: uppercase;
-    margin: 0 0 10px;
+    margin: 55px 0 10px;
 }
-.rules_main_list_item{
+.rules_main_list_texte{
     color: var(--project-grey);
     font-weight: 400;
     line-height: 1.71429; /* 171.429% */
     letter-spacing: 0.42px;
 }
+.rules_main_list_item:nth-child(1)::before{
+    content: url('/images/antenna\ 1.png');
+}
+.rules_main_list_item:nth-child(2)::before{
+    content: url('/images/clock\ 1.png');
+}
+.rules_main_list_item:nth-child(3)::before{
+    content: url('/images/diagram\ 1.png');
+}
+.rules_main_list_item:nth-child(4)::before{
+    content: url('/images/astronaut\ 1.png');
+}
+
 /* about */
 .about{
     /* outline: 2px solid blue; */
