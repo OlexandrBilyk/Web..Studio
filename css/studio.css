@@ -137,6 +137,7 @@ ul{
     padding: 10px 32px;
     display: block;
     margin: 0 auto;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     
    
 
@@ -172,19 +173,19 @@ ul{
 
 .rules_main_list_item:nth-child(1)::before{
     content:"" ;
-    background-image:url('/images/antenna\ 1.png'), url('/images/backround1.png');
+    background-image:url('/images/antenna1.png');
 }
 .rules_main_list_item:nth-child(2)::before{
     content:"" ;
-    background-image:url('/images/clock\ 1.png')
+    background-image:url('/images/clock1.png');
 }
 .rules_main_list_item:nth-child(3)::before{
     content:"";
-    background-image: url('/images/diagram\ 1.png');
+    background-image: url('/images/diagram1.png');
 }
 .rules_main_list_item:nth-child(4)::before{
     content:"";
-    background-image: url('/images/astronaut\ 1.png');
+    background-image: url('/images/astronaut1.png');
 }
 .rules_main_list_item::before{
     content: "";
@@ -237,6 +238,8 @@ ul{
     background: #FFF;
     width: 270px;
     padding-bottom: 30px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
 }
 .team_title{
     color: var(--project-black);
