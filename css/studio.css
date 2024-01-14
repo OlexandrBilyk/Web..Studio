@@ -173,19 +173,19 @@ ul{
 
 .rules_main_list_item:nth-child(1)::before{
     content:"" ;
-    background-image:url('../images/antenna1.png');
+    background-image:url('../images/antenna1.svg');
 }
 .rules_main_list_item:nth-child(2)::before{
     content:"" ;
-    background-image:url('../images/clock1.png');
+    background-image:url('../images/clock1.svg');
 }
 .rules_main_list_item:nth-child(3)::before{
     content:"";
-    background-image: url('../images/diagram1.png');
+    background-image: url('../images/diagram1.svg');
 }
 .rules_main_list_item:nth-child(4)::before{
     content:"";
-    background-image: url('../images/astronaut1.png') ;
+    background-image: url('../images/astronaut1.svg') ;
 }
 .rules_main_list_item::before{
     content: "";
