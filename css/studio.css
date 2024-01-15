@@ -173,7 +173,7 @@ ul{
 
 .rules_main_list_item:nth-child(1)::before{
     content:"" ;
-    background-image:url('../images/antenna1.svg');
+    background-image:url('../images/anntena1.svg');
 }
 .rules_main_list_item:nth-child(2)::before{
     content:"" ;
