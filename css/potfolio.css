@@ -112,13 +112,13 @@ ul{
 .P_footer_item{
     color: #FFF;
 }
-.P_btn_link{
+.P_btn_list{
     display: flex;
     gap: 8px;
     justify-content: center;
     
 }
-.P_main_btn{
+.P_descr_btn{
     cursor: pointer;
     border-radius: 4px;
 background: #F5F4FA;
@@ -141,7 +141,7 @@ flex-shrink: 0;
 
 }
 
-.P_main_btn:hover{
+.P_descr_btn:hover{
     border-color: var(--project-blue);
     background-color: var(--project-blue);
     color: #FFF;
@@ -167,7 +167,7 @@ flex-shrink: 0;
 .P_list_item:hover{
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
-.P_img{
+.P_list_img{
     width: 370px;
 height: 294px;
 flex-shrink: 0;

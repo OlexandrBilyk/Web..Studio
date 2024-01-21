@@ -108,11 +108,16 @@ ul{
 /* main{
     outline: 2px solid red;
 } */
-.main_hero{
+.hero{
     background-color: var(--project-black);
     padding: 200px 0; 
+    width: 100%;
+    background-image:linear-gradient( to right, rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url('../images/Img2_hero.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.main_title{
+.hero_title{
     color: #FFF;
     text-align: center;
     font-size: 44px;
@@ -126,7 +131,7 @@ ul{
   
 
 }   
-.main_btn{
+.hero_btn{
     
     color: #FFF;
     text-align: center;
@@ -176,7 +181,7 @@ ul{
     background-image:url('../images/anntena1.svg');
 }
 .rules_main_list_item:nth-child(2)::before{
-    content:"" ;
+    content:"";
     background-image:url('../images/clock1.svg');
 }
 .rules_main_list_item:nth-child(3)::before{
