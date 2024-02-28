@@ -9,7 +9,23 @@ body{
     font-style: normal;
     line-height: normal;
 }
-
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+/* container */
+ul, p, h2, button{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+ /* outline: 2px solid red;  */
+} 
 button{
     cursor: pointer;
 }
@@ -55,22 +71,20 @@ header{
     letter-spacing: 0.78px;
     text-decoration: none;
 }
-.nav_list{
+.nav__list{
   display: flex;
   gap: 50px;
 }
 
 
-.nav_list_link{
-      
+.nav-list__link{
     color: var(--project-black);
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
     text-decoration: none;
-    
 }
-.nav_list_link:hover{
+.nav-list__link:hover{
     color: var(--project-blue);
 }
 ul{
@@ -82,43 +96,34 @@ ul{
     justify-content: flex-end;
 }
 
-.mailto_link,.tel_link{
+.mailto__link,.tel__link{
     color: var(--project-grey);
     font-weight: 500;
     letter-spacing: 0.28px;
-    text-decoration: none;
 }
-.mailto_link:hover{
+.mailto__link:hover{
     color: var(--project-blue);
 }
-.tel_link:hover{
+.tel__link:hover{
     color: var(--project-blue);
 }
-.P_header .container{
+.header .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.P_header{
-
-    border-bottom: 1px solid #ECECEC;
-}
-.P_descr{
+/* descr */
+.descr{
     padding-bottom: 114px;
+    border-top: 1px solid #ECECEC;
 }
-.P_footer{
-    padding: 60px 0;
-}
-.P_footer_item{
-    color: #FFF;
-}
-.P_btn_list{
+.btn__list{
     display: flex;
     gap: 8px;
     justify-content: center;
     
 }
-.P_descr_btn{
+.descr__btn{
     cursor: pointer;
     border-radius: 4px;
 background: #F5F4FA;
@@ -141,39 +146,37 @@ flex-shrink: 0;
 
 }
 
-.P_descr_btn:hover{
+.descr__btn:hover{
     border-color: var(--project-blue);
     background-color: var(--project-blue);
     color: #FFF;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
-.P_main_list_link{
-    padding-bottom: 174px;
-}
-.P_list{
+.list{
     display: flex;
     flex-wrap: wrap;
     row-gap: 30px;
     justify-content: space-between;
 
 }
-.P_list_item{
+.list__item{
 
     border: 1px solid #EEE;
     background: #FFF;
     padding: 0 0 20px;
     flex-basis:calc((100% - 60px ) / 3);  
+    cursor: pointer;
 }
-.P_list_item:hover{
+.list__item:hover{
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
-.P_list_img{
+.list__img{
     width: 370px;
-height: 294px;
-flex-shrink: 0;
+    height: 294px;
+    flex-shrink: 0;
 
 }
-.P_main_title{
+.main__title{
     color: var(--project-black);
     font-size: 18px;
     font-weight: 700;
@@ -182,7 +185,7 @@ flex-shrink: 0;
     margin-top: 20px;
     padding-left: 24px;
 }
-.P_list_texte{
+.list__texte{
     color: var(--project-grey);
     font-size: 16px;
     font-weight: 400;
@@ -190,48 +193,38 @@ flex-shrink: 0;
     letter-spacing: 0.48px ;
     padding-left: 24px;
 }
-.P_img, button{
+.list__img, button{
     display: block;
 }
-/* container */
-ul, p, h2, button{
-    padding: 0;
-    margin: 0;
-}
-.container{
-    width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
- /* outline: 2px solid red;  */
-} 
+/* footer */
 .footer{
     /* outline: 2px solid red; */
     padding: 60px 0;
 }
-.footer, .P_footer{
+.footer{
     background-color: var(--project-black);
 }
-#footer_logo_white{
+#footer-logo__white{
     color: #fff;
 }
-.footer_link{
+.footer-contacts__list{
     display: flex;
     gap: 9px;
     flex-direction: column;
 }
-.footer_address{
-    margin-top: 20px;
+.footer__address{
+    margin: 20px 0 13px;
     color: #FFF;
 }
-.footer_mailto, .footer_tel{
+.footer__mailto, .footer__tel{
     color: var(--project-grey);
     font-weight: 500;
     letter-spacing: 0.28px;
     text-decoration: none; 
 }
-.footer_tel:hover{
+.footer__tel:hover{
     color: var(--project-blue);
 }
-.footer_mailto:hover{
+.footer__mailto:hover{
     color: var(--project-blue);
 }
