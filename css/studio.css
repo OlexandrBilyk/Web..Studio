@@ -15,11 +15,12 @@ a{
 ul{
     list-style-type: none;
 }
-/* container */
+
 ul, p, h2, button{
     padding: 0;
     margin: 0;
 }
+/* container */
 .container{
     width: 1200px;
     padding: 0 15px;
@@ -39,19 +40,10 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-#header-logo__black{
-    color: var(--project-black);
-}
 .header_pages{
     display: flex;
     gap: 93px;
     
-}
-.navigation{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
 }
 .logo{
     color: var(--project-blue);
@@ -71,12 +63,19 @@ header{
     letter-spacing: 0.78px;
     text-decoration: none;
 }
+#header_logo_black{
+    color: var(--project-black);
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
 .nav__list{
   display: flex;
   gap: 50px;
 }
-
-
 .nav-list__link{
     color: var(--project-black);
     font-weight: 500;
@@ -87,9 +86,7 @@ header{
 .nav-list__link:hover{
     color: var(--project-blue);
 }
-ul{
-    list-style-type: none;
-}
+
 .contacts{
     display: flex;
     gap: 50px;
@@ -101,12 +98,10 @@ ul{
     font-weight: 500;
     letter-spacing: 0.28px;
 }
-.mailto__link:hover{
+.mailto__link:hover, .tel__link:hover{
     color: var(--project-blue);
 }
-.tel__link:hover{
-    color: var(--project-blue);
-}
+
 .header .container{
     display: flex;
     align-items: center;

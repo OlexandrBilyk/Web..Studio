@@ -15,23 +15,22 @@ a{
 ul{
     list-style-type: none;
 }
-/* container */
+
 ul, p, h2, button{
     padding: 0;
     margin: 0;
 }
+/* container */
 .container{
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
- /* outline: 2px solid red;  */
 } 
 button{
     cursor: pointer;
 }
 /* header */
 header{
-    /* outline: 2px solid burlywood; */
     padding: 24px 0 25px;
 }
 .header .container{
@@ -39,19 +38,10 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-#header_logo_black{
-    color: var(--project-black);
-}
 .header_pages{
     display: flex;
     gap: 93px;
     
-}
-.navigation{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
 }
 .logo{
     color: var(--project-blue);
@@ -71,12 +61,19 @@ header{
     letter-spacing: 0.78px;
     text-decoration: none;
 }
+#header_logo_black{
+    color: var(--project-black);
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
 .nav__list{
   display: flex;
   gap: 50px;
 }
-
-
 .nav-list__link{
     color: var(--project-black);
     font-weight: 500;
@@ -87,9 +84,7 @@ header{
 .nav-list__link:hover{
     color: var(--project-blue);
 }
-ul{
-    list-style-type: none;
-}
+
 .contacts{
     display: flex;
     gap: 50px;
@@ -101,12 +96,10 @@ ul{
     font-weight: 500;
     letter-spacing: 0.28px;
 }
-.mailto__link:hover{
+.mailto__link:hover, .tel__link:hover{
     color: var(--project-blue);
 }
-.tel__link:hover{
-    color: var(--project-blue);
-}
+
 .header .container{
     display: flex;
     align-items: center;
@@ -123,43 +116,39 @@ ul{
     justify-content: center;
     
 }
-.descr__btn{
+.btn-list__btn{
     cursor: pointer;
     border-radius: 4px;
-background: #F5F4FA;
-/* width: 73px; */
-flex-shrink: 0;
+    background: #F5F4FA;
+    flex-shrink: 0;
 
 
     color:#212121;
     text-align: center;
     font-weight: 500;
-    line-height: 1.625; /* 162.5% */
+    line-height: 1.625;
     letter-spacing: 0.48px;
     border-color: #FFF;
     padding: 6px 22px;
     margin: 126px 0 50px;
     border: none;
     flex-basis: calc(( 100% - 40px) / 5);
-
-
-
 }
-
-.descr__btn:hover{
+.btn-list__btn:hover{
     border-color: var(--project-blue);
     background-color: var(--project-blue);
     color: #FFF;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
-.list{
+/* descr-list */
+.descr__list{
     display: flex;
     flex-wrap: wrap;
     row-gap: 30px;
     justify-content: space-between;
 
 }
-.list__item{
+.descr-list__item{
 
     border: 1px solid #EEE;
     background: #FFF;
@@ -167,16 +156,16 @@ flex-shrink: 0;
     flex-basis:calc((100% - 60px ) / 3);  
     cursor: pointer;
 }
-.list__item:hover{
+.descr-list__item:hover{
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
-.list__img{
+.descr-list__img{
     width: 370px;
     height: 294px;
     flex-shrink: 0;
 
 }
-.main__title{
+.descr-list__title{
     color: var(--project-black);
     font-size: 18px;
     font-weight: 700;
@@ -185,11 +174,11 @@ flex-shrink: 0;
     margin-top: 20px;
     padding-left: 24px;
 }
-.list__texte{
+.descr-list__category{
     color: var(--project-grey);
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.875; /* 187.5% */
+    line-height: 1.875; 
     letter-spacing: 0.48px ;
     padding-left: 24px;
 }
@@ -198,7 +187,6 @@ flex-shrink: 0;
 }
 /* footer */
 .footer{
-    /* outline: 2px solid red; */
     padding: 60px 0;
 }
 .footer{
