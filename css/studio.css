@@ -63,7 +63,7 @@ header{
     letter-spacing: 0.78px;
     text-decoration: none;
 }
-#header_logo_black{
+#header-logo__black{
     color: var(--project-black);
 }
 .navigation{
