@@ -209,9 +209,15 @@ header{
     /* outline: 2px solid blue; */
     padding: 0 0 94px;
 }
+
 .about__list{
     display: flex;
     gap: 30px;
+    
+}
+.about-list__item{
+    position: relative;
+
 }
 .about__title{
     color: var(--project-black);
@@ -222,11 +228,25 @@ header{
     margin: 0 0 50px ;
     /* padding-top: 94px; */
 }
+
 .about-list__img{
     width: 370px;
-    height: 294px;
     flex-shrink: 0;
-    /* margin-top: 50px; */
+}
+.about-list__texte{
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;   
+    width: 370px;
+    background-color:rgba(47, 48, 58, 0.8);
+    padding: 27px 113px ;
+    letter-spacing: 0.03em;
+    position: absolute;
+    bottom:3px;
+    
 }
 /* team */
 .team{
