@@ -295,6 +295,17 @@ header{
     font-weight: 400;
     letter-spacing: 0.48px;
 }
+/* customers */
+.customers{
+    padding: 95px 0;   
+}
+.customers__title{
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+}
 /* footer */
 .footer{
     /* outline: 2px solid red; */
