@@ -92,7 +92,6 @@ header{
     gap: 50px;
     justify-content: flex-end;
 }
-
 .mailto__link,.tel__link{
     color: var(--project-grey);
     font-weight: 500;
@@ -264,7 +263,6 @@ header{
     width: 270px;
     padding-bottom: 30px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-
 }
 .team__title{
     color: var(--project-black);
@@ -295,6 +293,20 @@ header{
     font-weight: 400;
     letter-spacing: 0.48px;
 }
+.team-list__svgs{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 34px;
+    margin-top: 20px;
+
+}
+
+.team-list__svg{
+    fill: #afb1b8;
+    width: 20px;
+    height: 20px;
+} 
 /* customers */
 .customers{
     padding: 95px 0;   
