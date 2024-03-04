@@ -305,6 +305,32 @@ header{
     letter-spacing: 0.03em;
     text-align: center;
     color: #212121;
+    margin-bottom: 59px;
+}
+.customer__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.customer-list__item{
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    padding: 17px 30px;
+}
+.customer-list__item:hover{
+    border-color: #2196f3;
+    cursor: pointer;
+}
+.customer-list__item:hover svg{
+    fill: #2196f3;
+    cursor: pointer;
+}
+.customer-list__svg{
+    width: 106px;
+    height: 60px; 
+    fill: #afb1b8;
 }
 /* footer */
 .footer{
