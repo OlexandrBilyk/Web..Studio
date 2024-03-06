@@ -93,10 +93,9 @@ header{
     justify-content: flex-end;
     align-items: center;
 }
-.contacts-email__svg{
+.contacts-email__svg, .contacts-phone__svg{
     fill: #757575;
 }
-
 .contacts__item:hover svg{
     fill: #2196f3;
 }
