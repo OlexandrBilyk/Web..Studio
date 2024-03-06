@@ -120,7 +120,7 @@ header{
     background-color: var(--project-black);
     padding: 200px 0; 
     width: 100%;
-    background-image:linear-gradient( to right, rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url('../images/img2_hero.jpg');
+    background-image:linear-gradient( to right, rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url('../images/hero2img.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
