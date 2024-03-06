@@ -378,7 +378,7 @@ header{
     align-items:center ;
     gap: 70px;
 }
-.footer__pages1{
+.footer-pages__left{
     display: flex;
     flex-direction: column;
 }
