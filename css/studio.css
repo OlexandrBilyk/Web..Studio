@@ -91,11 +91,20 @@ header{
     display: flex;
     gap: 50px;
     justify-content: flex-end;
+    align-items: center;
+}
+.contacts-email__svg{
+    fill: #757575;
+}
+
+.contacts__item:hover svg{
+    fill: #2196f3;
 }
 .mailto__link,.tel__link{
     color: var(--project-grey);
     font-weight: 500;
     letter-spacing: 0.28px;
+    margin-left: 10px;
 }
 .mailto__link:hover, .tel__link:hover{
     color: var(--project-blue);
@@ -294,19 +303,33 @@ header{
     letter-spacing: 0.48px;
 }
 .team-list__svgs{
-    display: flex;
-    justify-content: center;
+    display:flex;
+    justify-content:center;
+    gap: 10px;
     align-items:center;
-    gap: 34px;
     margin-top: 20px;
+}
+.team-svgs__item{
+    padding: 12px;
+    border-radius: 50px;
+    cursor: pointer;
 
 }
-
+.team-svgs__item:hover{
+    background-color: #2196f3;
+}
+.team-svgs__item:hover svg{
+    fill: #FFF;
+}
 .team-list__svg{
     fill: #afb1b8;
     width: 20px;
     height: 20px;
 } 
+.team-list__svg:hover{
+    fill: #FFF;
+}
+
 /* customers */
 .customers{
     padding: 95px 0;   
@@ -348,9 +371,16 @@ header{
 .footer{
     /* outline: 2px solid red; */
     padding: 60px 0;
-}
-.footer{
     background-color: var(--project-black);
+}
+.footer .container{
+    display: flex;
+    align-items:center ;
+    gap: 70px;
+}
+.footer__pages1{
+    display: flex;
+    flex-direction: column;
 }
 #footer-logo__white{
     color: #fff;
@@ -376,3 +406,33 @@ header{
 .footer__mailto:hover{
     color: var(--project-blue);
 }
+.footer-pages__title{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-network__list{
+    display: flex;
+    gap: 10px;
+    
+}
+.footer-network__item{
+    display: inline-block;
+    padding: 12px;
+    border-radius: 50px;
+    background-color:rgba(255, 255, 255, 0.1) ;
+}
+.footer-network__item:hover{
+    background-color:  #2196f3;
+    cursor: pointer;
+}
+.footer-network__svg{
+    fill: #FFF;
+    width: 20px;
+    height: 20px;
+}
+
