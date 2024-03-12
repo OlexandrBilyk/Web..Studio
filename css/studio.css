@@ -245,6 +245,9 @@ header{
     cursor: pointer;
     padding-left: 41px;
 }
+.modal-form__input{
+    outline-color:#2196f3 ;
+}
 .modal-form__input:hover,
 .modal-form__input:hover + .modal-form__icon {
     border-color:#2196f3 ;
@@ -266,6 +269,12 @@ header{
     height: 120px;
     resize: none;
 
+}
+.modal-form__comm:hover{
+    border-color:#2196f3;
+}
+.modal-form__comm:focus{
+    outline-color:#2196f3 ;
 }
 .modal-form__div{
     display: flex;
