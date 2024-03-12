@@ -75,6 +75,9 @@ header{
   display: flex;
   gap: 50px;
 }
+.nav-list__item{
+    position: relative;
+}
 .nav-list__link{
     color: var(--project-black);
     font-weight: 500;
@@ -85,12 +88,32 @@ header{
 .nav-list__link:hover{
     color: var(--project-blue);
 }
-
+.nav-list__link:hover::after{
+    content: '';
+    display: block;
+    background-color: #2196f3;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    top: 45px;
+}
 .contacts{
     display: flex;
     gap: 50px;
-    justify-content: flex-end;
+}
+.contacts__item{
+    display: flex;
     align-items: center;
+    justify-content: center;
+}
+.contacts-email__svg{
+    width: 16px;
+    height: 12px;
+}
+.contacts-phone__svg{
+    width: 10px;
+    height: 16px;
 }
 .contacts-email__svg, .contacts-phone__svg{
     fill: #757575;
@@ -201,6 +224,10 @@ header{
 }
 .footer .container{
     display: flex;
+    align-items: center;
+}
+.footer .container{
+    display: flex;
     align-items:center ;
     gap: 70px;
 }
@@ -249,7 +276,7 @@ header{
 .footer-network__item{
     display: inline-block;
     padding: 12px;
-    border-radius: 50px;
+    border-radius: 22px;
     background-color:rgba(255, 255, 255, 0.1) ;
 }
 .footer-network__item:hover{
@@ -261,3 +288,47 @@ header{
     width: 20px;
     height: 20px;
 }
+.footer-right__form{
+    display: flex;
+    gap: 12px;
+}
+.footer-right__input{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: rgba(33, 150, 243, 0);
+    padding: 13px 15px;
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-right__btn{
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: #2196f3;
+    padding: 10px 28px;
+    height: 50px;
+
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 187%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #fff;
+}
+.footer-right__icon{
+    width: 21px;
+    height: 21px;
+    fill: #FFF;
+    position: relative;
+    left: 6px;
+    top: 3px;
+}
+
