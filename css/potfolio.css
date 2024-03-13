@@ -2,12 +2,15 @@
     --project-black:#2F303A;;
     --project-grey:rgba(117, 117, 117, 1);
     --project-blue:rgba(33, 150, 243, 1);
+    --svg-hover: #2196f3;
+    --web-studio-white:#FFF;
 }
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-style: normal;
     line-height: normal;
+    font-weight: 700;
 }
 a{
     text-decoration: none;
@@ -49,7 +52,6 @@ header{
     color: var(--project-blue);
     font-family: 'Raleway',sans-serif;
     font-size: 26px;
-    font-weight: 700;
     letter-spacing: 0.78px;
     text-decoration: none; 
 
@@ -59,7 +61,6 @@ header{
 .logo2{
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
-    font-weight: 700;
     letter-spacing: 0.78px;
     text-decoration: none;
 }
@@ -160,7 +161,7 @@ header{
     font-weight: 500;
     line-height: 1.625;
     letter-spacing: 0.48px;
-    border-color: #FFF;
+    border-color: var(--web-studio-white);
     padding: 6px 22px;
     margin: 126px 0 50px;
     border: none;
@@ -169,7 +170,7 @@ header{
 .btn-list__btn:hover{
     border-color: var(--project-blue);
     background-color: var(--project-blue);
-    color: #FFF;
+    color: var(--web-studio-white);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 /* descr-list */
@@ -183,24 +184,49 @@ header{
 .descr-list__item{
 
     border: 1px solid #EEE;
-    background: #FFF;
+    background: var(--web-studio-white);
     padding: 0 0 20px;
     flex-basis:calc((100% - 60px ) / 3);  
     cursor: pointer;
+
+    position: relative;
+    overflow: hidden;
 }
+
 .descr-list__item:hover{
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
-.descr-list__img{
+.descr-list__item:hover .descr-overlay__box{
+    transform: translatey(0);
+}
+.descr-overlay__box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transform: translatey(100%);
+}
+.descr-overlay__text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+    color: #fff;
+    background-color: rgba(33, 150, 243, 0.9);
+    padding: 62px 23px;
+}
+.list__img{
     width: 370px;
     height: 294px;
     flex-shrink: 0;
 
 }
+
 .descr-list__title{
     color: var(--project-black);
     font-size: 18px;
-    font-weight: 700;
     line-height: 2; /* 200% */
     letter-spacing: 1.08px;
     margin-top: 20px;
@@ -237,7 +263,7 @@ header{
     flex-direction: column;
 }
 #footer-logo__white{
-    color: #fff;
+    color: var(--web-studio-white);
 }
 .footer-contacts__list{
     display: flex;
@@ -246,7 +272,7 @@ header{
 }
 .footer__address{
     margin: 20px 0 13px;
-    color: #FFF;
+    color: var(--web-studio-white);
 }
 .footer__mailto, .footer__tel{
     color: var(--project-grey);
@@ -262,11 +288,10 @@ header{
 }
 .footer-pages__title{
     font-family: var(--font-family);
-    font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--web-studio-white);
     margin-bottom: 20px;
 }
 .footer-network__list{
@@ -285,7 +310,7 @@ header{
     cursor: pointer;
 }
 .footer-network__svg{
-    fill: #FFF;
+    fill: var(--web-studio-white);
     width: 20px;
     height: 20px;
 }
@@ -317,17 +342,16 @@ header{
     height: 50px;
 
 
-    font-weight: 700;
     font-size: 16px;
     line-height: 187%;
     letter-spacing: 0.06em;
     text-align: center;
-    color: #fff;
+    color: var(--web-studio-white);
 }
 .footer-right__icon{
     width: 21px;
     height: 21px;
-    fill: #FFF;
+    fill: var(--web-studio-white);
     position: relative;
     left: 6px;
     top: 3px;

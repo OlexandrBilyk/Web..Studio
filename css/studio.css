@@ -2,12 +2,15 @@
     --project-black:#2F303A;;
     --project-grey:rgba(117, 117, 117, 1);
     --project-blue:rgba(33, 150, 243, 1);
+    --svg-hover: #2196f3;
+    --web-studio-white:#FFF;
 }
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-style: normal;
     line-height: normal;
+    font-weight: 700;
 }
 a{
     text-decoration: none;
@@ -25,7 +28,6 @@ ul, p, h2, button{
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
- /* outline: 2px solid red;  */
 } 
 button{
     cursor: pointer;
@@ -60,7 +62,6 @@ header{
 .logo2{
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
-    font-weight: 700;
     letter-spacing: 0.78px;
     text-decoration: none;
 }
@@ -93,7 +94,7 @@ header{
 .nav-list__link:hover::after{
     content: '';
     display: block;
-    background-color: #2196f3;
+    background-color: var(--svg-hover);
     border-radius: 2px;
     width: 100%;
     height: 4px;
@@ -121,7 +122,7 @@ header{
     fill: #757575;
 }
 .contacts__item:hover svg{
-    fill: #2196f3;
+    fill: var(--svg-hover);
 }
 .mailto__link,.tel__link{
     color: var(--project-grey);
@@ -149,7 +150,7 @@ header{
     background-repeat: no-repeat;
 }
 .hero__title{
-    color: #FFF;
+    color: var(--web-studio-white);
     text-align: center;
     font-size: 44px;
     font-weight: 900;
@@ -164,7 +165,7 @@ header{
 }   
 .hero__btn{
     
-    color: #FFF;
+    color: var(--web-studio-white);
     text-align: center;
     font-size: 16px;
     font-weight: 700;
@@ -210,7 +211,7 @@ header{
 
     padding: 40px;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-    background-color: #fff;
+    background-color: var(--web-studio-white);
     transform: translate(-50%, -50%);
 }
 
@@ -224,7 +225,7 @@ header{
     position: relative;
 }
 .modal__title{
-    font-weight: 700;
+    
     font-size: 20px;
     letter-spacing: 0.03em;
     text-align: center;
@@ -246,12 +247,12 @@ header{
     padding-left: 41px;
 }
 .modal-form__input{
-    outline-color:#2196f3 ;
+    outline-color:var(--svg-hover) ;
 }
 .modal-form__input:hover,
 .modal-form__input:hover + .modal-form__icon {
-    border-color:#2196f3 ;
-    fill: #2196f3;
+    border-color:var(--svg-hover) ;
+    fill: var(--svg-hover);
 }
 .modal-form__icon{
     width: 13px;
@@ -268,13 +269,14 @@ header{
     width: 448px;
     height: 120px;
     resize: none;
+    cursor: text;
 
 }
 .modal-form__comm:hover{
-    border-color:#2196f3;
+    border-color:var(--svg-hover);
 }
 .modal-form__comm:focus{
-    outline-color:#2196f3 ;
+    outline-color:var(--svg-hover) ;
 }
 .modal-form__div{
     display: flex;
@@ -301,14 +303,17 @@ header{
     
 }
 .modal-form__check:checked::after{
-    content: '\2714';
+    content:'';
+    background-image: url("../images/check.svg");
+    background-position: center;
+    background-repeat: no-repeat;
     position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 2px;
-    outline: 3px solid #2196f3;
-    background-color: #2196f3;
-    color:  #fff;
+    outline: 3px solid var(--svg-hover);
+    background-color: var(--svg-hover);
+    color:  var(--web-studio-white);
     display: flex;
     justify-content: center;
     align-items:center;
@@ -316,7 +321,7 @@ header{
 }
 .modal-form__link{
     text-decoration:underline ;
-    color:#2196f3 ;
+    color:var(--svg-hover) ;
 }
 .form-btn__submit{
     display: block;
@@ -326,18 +331,18 @@ header{
     padding: 10px 52px;
     margin: 30px auto 0;
 
-    font-weight: 700;
+    
     font-size: 16px;
     line-height: 187%;
     letter-spacing: 0.06em;
     text-align: center;
-    color: #fff;
+    color: var(--web-studio-white);
 }
 .modal-btn__close{
     padding: 8px 11px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 100%;
-    background-color: #FFF;
+    background-color: var(--web-studio-white);
     position: absolute;
     top: 8px;
     right: 8px;
@@ -348,7 +353,7 @@ header{
     
 }
 .modal-icon__close:hover{
-    fill: #2196f3;
+    fill: var(--svg-hover);
 }
 /* rules  */
 .rules{
@@ -363,7 +368,6 @@ header{
 
 .rules-list_title{
     color: var(--project-black);
-    font-weight: 700;
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin: 55px 0 10px;
@@ -422,7 +426,6 @@ header{
     color: var(--project-black);
     text-align: center;
     font-size: 36px;
-    font-weight: 700;
     letter-spacing: 1.08px;
     margin: 0 0 50px ;
     /* padding-top: 94px; */
@@ -433,12 +436,11 @@ header{
     flex-shrink: 0;
 }
 .about-list__texte{
-    font-weight: 700;
     font-size: 12px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: center;
-    color: #fff;   
+    color: var(--web-studio-white);   
     width: 370px;
     background-color:rgba(47, 48, 58, 0.8);
     padding: 27px 113px ;
@@ -459,7 +461,7 @@ header{
 }
 .team-list__item{
     border-radius: 0px 0px 4px 4px;
-    background: #FFF;
+    background: var(--web-studio-white);
     width: 270px;
     padding-bottom: 30px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -468,7 +470,6 @@ header{
     color: var(--project-black);
     text-align: center;
     font-size: 36px;
-    font-weight: 700;
     letter-spacing: 1.08px;
     margin:50px;
 }
@@ -507,10 +508,10 @@ header{
 
 }
 .team-svgs__item:hover{
-    background-color: #2196f3;
+    background-color: var(--svg-hover);
 }
 .team-svgs__item:hover svg{
-    fill: #FFF;
+    fill: var(--web-studio-white);
 }
 .team-list__svg{
     fill: #afb1b8;
@@ -518,7 +519,7 @@ header{
     height: 20px;
 } 
 .team-list__svg:hover{
-    fill: #FFF;
+    fill: var(--web-studio-white);
 }
 
 /* customers */
@@ -526,7 +527,6 @@ header{
     padding: 95px 0;   
 }
 .customers__title{
-    font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
     text-align: center;
@@ -546,11 +546,11 @@ header{
     padding: 17px 30px;
 }
 .customer-list__item:hover{
-    border-color: #2196f3;
+    border-color: var(--svg-hover);
     cursor: pointer;
 }
 .customer-list__item:hover svg{
-    fill: #2196f3;
+    fill: var(--svg-hover);
     cursor: pointer;
 }
 .customer-list__svg{
@@ -578,7 +578,7 @@ header{
     flex-direction: column;
 }
 #footer-logo__white{
-    color: #fff;
+    color: var(--web-studio-white);
 }
 .footer-contacts__list{
     display: flex;
@@ -587,7 +587,7 @@ header{
 }
 .footer__address{
     margin: 20px 0 13px;
-    color: #FFF;
+    color: var(--web-studio-white);
 }
 .footer__mailto, .footer__tel{
     color: var(--project-grey);
@@ -603,11 +603,10 @@ header{
 }
 .footer-pages__title{
     font-family: var(--font-family);
-    font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--web-studio-white);
     margin-bottom: 20px;
 }
 .footer-network__list{
@@ -622,11 +621,11 @@ header{
     background-color:rgba(255, 255, 255, 0.1) ;
 }
 .footer-network__item:hover{
-    background-color:  #2196f3;
+    background-color:  var(--svg-hover);
     cursor: pointer;
 }
 .footer-network__svg{
-    fill: #FFF;
+    fill: var(--web-studio-white);
     width: 20px;
     height: 20px;
 }
@@ -653,22 +652,21 @@ header{
 .footer-right__btn{
     border-radius: 4px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background-color: #2196f3;
+    background-color: var(--svg-hover);
     padding: 10px 28px;
     height: 50px;
 
 
-    font-weight: 700;
     font-size: 16px;
     line-height: 187%;
     letter-spacing: 0.06em;
     text-align: center;
-    color: #fff;
+    color: var(--web-studio-white);
 }
 .footer-right__icon{
     width: 21px;
     height: 21px;
-    fill: #FFF;
+    fill: var(--web-studio-white);
     position: relative;
     left: 6px;
     top: 3px;
