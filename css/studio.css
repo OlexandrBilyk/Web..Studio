@@ -19,7 +19,7 @@ ul{
     list-style-type: none;
 }
 
-ul, p, h2, button{
+ul, p, h2, button, figure, figcaption{
     padding: 0;
     margin: 0;
 }
@@ -418,10 +418,6 @@ header{
     gap: 30px;
     
 }
-.about-list__item{
-    position: relative;
-
-}
 .about__title{
     color: var(--project-black);
     text-align: center;
@@ -430,7 +426,9 @@ header{
     margin: 0 0 50px ;
     /* padding-top: 94px; */
 }
-
+.about-list__thumb{
+    position: relative;
+}
 .about-list__img{
     width: 370px;
     flex-shrink: 0;
