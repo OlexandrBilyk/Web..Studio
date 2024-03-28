@@ -149,7 +149,7 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.hero__title{
+.hero__title{ 
     color: var(--web-studio-white);
     text-align: center;
     font-size: 44px;
