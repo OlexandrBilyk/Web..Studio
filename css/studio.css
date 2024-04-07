@@ -297,7 +297,7 @@ header{
     border-radius: 1px;
     width: 16px;
     height: 15px;
-    outline: 2px solid #212121;
+    outline: 1.8px solid #212121;
     position: relative;
     cursor: pointer;
     
@@ -312,8 +312,7 @@ header{
     height: 100%;
     border-radius: 2px;
     outline: 3px solid var(--svg-hover);
-    background-color: var(--svg-hover);
-    color:  var(--web-studio-white);
+    background-color: #2196f3;
     display: flex;
     justify-content: center;
     align-items:center;

@@ -35,10 +35,6 @@
     "breadcrumbs.showTypeParameters": false,
     "breadcrumbs.showVariables": false,
 
-    "editor.wordWrap": "on",
-    "editor.unicodeHighlight.ambiguousCharacters": false,
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
     "editor.tabSize": 2, // размер таба 
     "editor.formatOnSave": true, // форматировать код при сохранении
     "explorer.compactFolders": false, // компактные папки
@@ -47,8 +43,4 @@
     "terminal.integrated.smoothScrolling": true, // плавный скролл в терминале
     "editor.cursorBlinking": "expand", // мигающей курсор
     "terminal.integrated.cursorBlinking": true,  // мигающей курсор
-    "editor.glyphMargin": false,
-    "editor.linkedEditing": true,
-    "editor.padding.top": 15, // отступ сверху кода
- 
 }
