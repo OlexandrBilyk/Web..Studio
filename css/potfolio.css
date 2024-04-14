@@ -5,6 +5,9 @@
     --svg-hover: #2196f3;
     --web-studio-white:#FFF;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -133,7 +136,6 @@ header{
 }
 .contacts__item:hover svg{
     fill: var(--svg-hover);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mailto__link,.tel__link{
     color: var(--project-grey);
