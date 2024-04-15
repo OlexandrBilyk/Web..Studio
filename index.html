@@ -65,7 +65,6 @@
             <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>  
             <button type="button" class="hero__btn" data-open-modal>Замовити послугу</button> 
             </div>
-        </div>
         </section>
 
     <section class="rules">
@@ -307,11 +306,11 @@
             <a href="./index.html" class="logo">Web<span class="logo2" id="footer-logo__white">Studio</span></a>
             
     <p class="footer__address">м. Київ, пр-т Лесі Українки, 26</p>
-            <ul class="footer-contacts__list">
-    <li class="footer-list__item"><a href="mailto:info@devstudio.com" class="footer__mailto">info@devstudio.com</a> </li>
-    <li class="footer-list__item"><a href="tel:+380961111111" class="footer__tel ">+38 096 111 11 11</a></li>
-    </div>      
+    <ul class="footer-contacts__list">
+        <li class="footer-list__item"><a href="mailto:info@devstudio.com" class="footer__mailto">info@devstudio.com</a> </li>
+        <li class="footer-list__item"><a href="tel:+380961111111" class="footer__tel ">+38 096 111 11 11</a></li>      
     </ul>
+    </div>
         <div class="footer-pages__center">
             <h3 class="footer-pages__title">приєднуйтесь</h3>
             <ul class="footer-network__list">
@@ -368,7 +367,7 @@
                 <ul class="modal-form__list">
                     <li class="modal-list__item">
                         <label for="name" class="modal-form__label">Ім'я</label> 
-                        <input type="name" id="name" class="modal-form__input" required>
+                        <input type="text" id="name" class="modal-form__input">
                         <svg class="modal-form__icon">
                             <use href="./images/icons/symbol-defs.svg#icon-modal2">
                             </use>
@@ -376,7 +375,7 @@
                     </li>
                         <li class="modal-list__item">
                         <label for="phone" class="modal-form__label">Телефон</label>
-                        <input type="phone" id="phone" class="modal-form__input" required>
+                        <input type="tel" id="phone" class="modal-form__input" required>
                         <svg class="modal-form__icon">
                             <use href="./images/icons/symbol-defs.svg#icon-modal3">
                             </use>
@@ -401,8 +400,11 @@
                     <label for="modal-form__check" class="modal-form__text">Погоджуюся з розсилкою та приймаю <a class="modal-form__link" href="#">Умови договору</a></label>
                 </div>
                 <button type="submit" class="form-btn__submit">Відправити</button>
-             </form>  
+             </form> 
+              <input type="radio">
                 <button class="modal-btn__close" data-close-modal ><svg class="modal-icon__close"><use href="./images/icons/symbol-defs.svg#icon-modal1"></use></svg></button>
         </div>
+    </div>
+        
 </body>
 </html>
