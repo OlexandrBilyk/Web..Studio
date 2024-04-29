@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -13,7 +18,7 @@
 
 </head> 
 <body>
-    <header class="header">
+    <header class="header" data-aos="fade-up">
         <div class="container">
             <div class="header_pages">
             <a href="index.html" class="logo">Web<span class="logo2" id="header-logo__black">Studio</span></a>
@@ -47,8 +52,8 @@
             </ul>
     </div>
     </header>
-    <main class="main">
-        <section class="descr">
+    <main class="main" data-aos="fade-up">
+        <section class="descr" data-aos="fade-up">
         <div class="container">
             <ul class="btn__list">
                 <li class="btn-list__item">
@@ -73,7 +78,7 @@
                     </button></li>
             </ul>
         <ul class="descr__list">
-            <li class="descr-list__item">
+            <li class="descr-list__item" data-aos="fade-up">
                 <div class="thumb">
                 <img src="./images/imgp1.jpg" alt="PC" class="list__img">
                 <div class="descr-overlay__box">
@@ -85,7 +90,7 @@
                 <h3 class="descr-list__title">Технокряк</h3>
                 <p  class="descr-list__category">Веб-сайт</p>
             </li>
-            <li class="descr-list__item">
+            <li class="descr-list__item" data-aos="fade-up">
                 <div class="thumb">
                 <img   class="list__img" src="./images/imgp2.jpg" alt="basket-ball">
                 <div class="descr-overlay__box">
@@ -97,7 +102,7 @@
                 <h3 class="descr-list__title">Постер New Orlean vs Golden Star</h3>
                 <p  class="descr-list__category">Дизайн</p>
             </li>
-            <li class="descr-list__item">
+            <li class="descr-list__item" data-aos="fade-up">
                 <div class="thumb">
                 <img  class="list__img" src="./images/imgp3.jpg" alt="SeaGood">
                 <div class="descr-overlay__box">
@@ -109,7 +114,7 @@
                 <h3 class="descr-list__title">Ресторан Seafood</h3>
                 <p  class="descr-list__category">Додаток</p>
             </li>
-            <li class="descr-list__item">
+            <li class="descr-list__item" data-aos="fade-up">
                 <div class="thumb">
                 <img  class="list__img" src="./images/imgp4.jpg" alt="earphones">
                 <div class="descr-overlay__box">
@@ -121,7 +126,7 @@
                 <h3 class="descr-list__title">Проєкт Prime</h3>
                 <p  class="descr-list__category">Маркетинг</p>
             </li>
-            <li class="descr-list__item">
+            <li class="descr-list__item" data-aos="fade-up">
                 <div class="thumb">
                 <img  class="list__img" src="./images/imgp5.jpg" alt="boxes">
                 <div class="descr-overlay__box">
@@ -133,7 +138,7 @@
                 <h3 class="descr-list__title"> Проєкт Boxes</h3>
                 <p  class="descr-list__category">Додаток</p>
             </li>
-            <li class="descr-list__item">
+            <li class="descr-list__item" data-aos="fade-up">
                 <div class="thumb">
                 <img  class="list__img" src="./images/imgp6.jpg" alt="PC_2.0">
                 <div class="descr-overlay__box">
@@ -145,7 +150,7 @@
                 <h3 class="descr-list__title">Inspiration has no Borders</h3>
                 <p  class="descr-list__category">Веб-сайт</p>
             </li>
-            <li class="descr-list__item">
+            <li class="descr-list__item" data-aos="fade-up">
                 <div class="thumb">
                 <img  class="list__img" src="./images/imgp7.jpg" alt="book">
                 <div class="descr-overlay__box">
@@ -157,7 +162,7 @@
                 <h3 class="descr-list__title">Видання Limited Edition</h3>
                 <p class="descr-list__category">Дизайн</p>
             </li>
-            <li class="descr-list__item">
+            <li class="descr-list__item" data-aos="fade-up">
                 <div class="thumb">
                 <img  class="list__img" src="./images/imgp8.jpg" alt="Lab_El_Tag">
                 <div class="descr-overlay__box">
@@ -169,7 +174,7 @@
                 <h3 class="descr-list__title"> Проєкт LAB</h3>
                 <p  class="descr-list__category">Маркетинг</p>
             </li>
-            <li class="descr-list__item">
+            <li class="descr-list__item" data-aos="fade-up">
                 <div class="thumb">
                 <img  class="list__img" src="./images/imgp9.jpg" alt="PC_3.0">
                 <div class="descr-overlay__box">
@@ -185,7 +190,7 @@
     </div>
     </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up">
         <div class="container"> 
         <div class="footer-pages__left">
             <a href="./index.html" class="logo">Web<span class="logo2" id="footer-logo__white">Studio</span></a>
@@ -241,5 +246,9 @@
 
 
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

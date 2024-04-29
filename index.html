@@ -2,8 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-widthц, initial-scale=1.0">
     <title>Web Studio</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,11 +16,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/studio.css">
     <script src="./js/modal.js " defer></script>
-
-    
 </head>
 <body>
-    <header class="header">
+    <header class="header" data-aos="fade-up">
         <div class="container">
             <div class="header_pages">
             <a href="index.html" class="logo">Web
@@ -60,29 +63,38 @@
     </div>
     </header>
     <main class="main">
-        <section class="hero">
+        <section class="hero" data-aos="fade-up">
         <div class="container">
             <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>  
-            <button type="button" class="hero__btn" data-open-modal>Замовити послугу</button> 
+            <button type="button" class="hero__btn" data-open-modal >Замовити послугу</button> 
             </div>
         </section>
 
-    <section class="rules">
+    <section class="rules" data-aos="fade-up">
         <div class="container">
         <ul class="rules__list">
-            <li class="rules-list__item"><h4 class="rules-list__title">УВАГА ДО ДЕТАЛЕЙ</h4> 
-            <p class="rules-list__texte">Iдейні міркування, і навіть початок  повсякденної 
-             роботи з формування позиції</p></li>
-            <li class="rules-list__item"><h4 class="rules-list__title">ПУНКТУАЛЬНІСТЬ</h4>
-            <p  class="rules-list__texte"> Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p></li>
-            <li class="rules-list__item"><h4 class="rules-list__title">ПЛАНУВАННЯ</h4>
-            <p  class="rules-list__texte">Так само консультація з широким активом значною мірою зумовлює.</p></li>
-            <li class="rules-list__item"> <h4 class="rules-list__title">СУЧАСНІ ТЕХНОЛОГІЇ</h4>
-            <p  class="rules-list__texte">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p></li>
+            <li class="rules-list__item">
+                <h4 class="rules-list__title">УВАГА ДО ДЕТАЛЕЙ</h4> 
+                
+                <p class="rules-list__texte">Iдейні міркування, і навіть початок  повсякденної 
+             роботи з формування позиції</p>
+            </li>
+            <li class="rules-list__item">
+                <h4 class="rules-list__title">ПУНКТУАЛЬНІСТЬ</h4>
+                <p  class="rules-list__texte"> Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+            </li>
+            <li class="rules-list__item">
+                <h4 class="rules-list__title">ПЛАНУВАННЯ</h4>
+                <p  class="rules-list__texte">Так само консультація з широким активом значною мірою зумовлює.</p>
+            </li>
+            <li class="rules-list__item">
+                 <h4 class="rules-list__title">СУЧАСНІ ТЕХНОЛОГІЇ</h4>
+                <p class="rules-list__texte">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+            </li>
         </ul>
     </div>
         </section>
-        <section class="about">
+        <section class="about" data-aos="fade-up">
         <div class="container">
             <h2 class="about__title">Чим ми займаємося</h2>
             <ul class="about__list">
@@ -107,7 +119,7 @@
             </ul> 
         </div>
         </section>
-        <section class="team">
+        <section class="team" data-aos="fade-up">
             <div class="container">
         
             <h2 class="team__title">Наша команда</h2>
@@ -249,7 +261,7 @@
         </ul>
         </div>
     </section>
-    <section class="customers">
+    <section class="customers" data-aos="fade-up">
         <div class="container">
             <h2 class="customers__title">Постійні клієнти</h2>
             <ul class="customer__list">
@@ -300,7 +312,7 @@
     </section>
 
     </main> 
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up">
         <div class="container"> 
         <div class="footer-pages__left">
             <a href="./index.html" class="logo">Web<span class="logo2" id="footer-logo__white">Studio</span></a>
@@ -362,7 +374,7 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal" >
             <form class="modal__form"> 
-            <h3 class="modal__title">Залиште с  вої дані, ми вам передзвонимо</h3>
+            <h3 class="modal__title">Залиште свої дані, ми вам передзвонимо</h3>
              
                 <ul class="modal-form__list">
                     <li class="modal-list__item">
@@ -401,10 +413,12 @@
                 </div>
                 <button type="submit" class="form-btn__submit">Відправити</button>
              </form> 
-              <input type="radio">
                 <button class="modal-btn__close" data-close-modal ><svg class="modal-icon__close"><use href="./images/icons/symbol-defs.svg#icon-modal1"></use></svg></button>
         </div>
     </div>
-        
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

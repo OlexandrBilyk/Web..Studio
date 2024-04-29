@@ -5,7 +5,6 @@
     --svg-hover: #2196f3;
     --web-studio-white:#FFF;
 }
-
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -210,7 +209,8 @@ header{
 
 }
 .rules__list{
-    display: flex;
+     display: grid;
+    grid-template-columns:  repeat(4, 270px); 
     gap: 30px;
 }
 
@@ -262,7 +262,9 @@ header{
 }
 
 .about__list{
-    display: flex;
+    /* gap: 30px; */
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
     gap: 30px;
     
 }
@@ -302,7 +304,8 @@ header{
     background: #F5F4FA;
 }
 .team__list{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
     gap: 30px;
 }
 .team-list__item{
@@ -380,9 +383,9 @@ header{
     margin-bottom: 59px;
 }
 .customer__list{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(6, 170px);
+    gap: 30px;
 }
 .customer-list__item{
     width: 170px;
@@ -465,7 +468,8 @@ header{
     margin-bottom: 20px;
 }
 .footer-network__list{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 44px);
     gap: 10px;
     
 }
