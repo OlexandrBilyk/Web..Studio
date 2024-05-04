@@ -203,14 +203,15 @@ header{
     border: none;  
 }
 /* rules  */
+
 .rules{
     /* outline: 3px dashed purple; */
-    padding: 94px 0 94px ;
+    padding: 94px 0 ;
 
 }
 .rules__list{
-     display: grid;
-    grid-template-columns:  repeat(4, 270px); 
+    display: grid;
+    grid-template: none / repeat(4, 270px); 
     gap: 30px;
 }
 
